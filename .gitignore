@@ -1,0 +1,60 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+secrets/
+*.secret
+*.secrets
+local.settings.json        
+.azure/                    
+*.publishsettings
+credentials.json
+service-account*.json
+
+# Data 
+data/raw/*
+data/processed/*
+data/outputs/*
+!data/**/.gitkeep
+*.parquet
+*.arrow
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.python-eggs/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# LangChain / LangSmith / local caches
+.langchain.db
+*.sqlite
+*.sqlite3
+.cache/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
